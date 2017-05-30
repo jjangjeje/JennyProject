@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+	
+	
+<sqlMap namespace ="performance">
+<!-- namespace SqlMapConfig.xml에서 설정  -->
+	
+	<typeAlias alias="TL_COURSE" type="com.performance.vo.PerformanceVO"/>
+	
+
+	<select id="test_list" resultClass="HashMap">
+		SELECT 	COURSE_NAME,
+				COURSE_START_DATE,
+				COURSE_END_DATE,
+				GET_WEEK_STR(COURSE_WEEK) as GET_WEEK_STR,
+				SCHEDULE_RECEIPT_FLAG
+		FROM 	TL_COURSE
+	</select>
+	
+	<!-- 로그인체크 -->
+	<select id="loginCheck" resultClass="int" parameterClass="HashMap">
+		SELECT	COUNT(*) 
+		FROM 	TA_MANAGER
+		WHERE 	MANAGER_ID 	= #id#
+		AND 	PASSWORD   	= #pw#
+	</select>
+	
+	<!-- 해당id에 대한 전체정보 -->
+	<select id="infoById" resultClass="HashMap" parameterClass="HashMap">
+		SELECT 	COMPANY_CD,
+				MANAGER_NO,
+				MANAGER_ID,
+				PASSWORD,
+				PASSWORD_DATE,
+				MANAGER_NAME,
+				MANAGER_CEL,
+				MANAGER_TEL,
+				MANAGER_EMAIL,
+				DEPARTMENT_TYPE,
+				AUTH_TYPE,
+				WIN_TYPE,
+				CERTIFY_TYPE,
+				CERTIFY_KEY,
+				DUPLICATE_KEY,
+				LAST_LOGIN,
+				LOGIN_LOCK_CNT,
+				LOGIN_LOCK_FLAG,
+				USE_FLAG,
+				CONFIRM_FLAG,
+				CONFIRM_USER,
+				CONFIRM_DATE,
+				CONFIRM_TIME,
+				INSERT_USER,
+				INSERT_DATE,
+				INSERT_TIME,
+				UPDATE_USER,
+				UPDATE_DATE,
+				UPDATE_TIME
+		FROM 	TA_MANAGER
+		WHERE 	MANAGER_ID = #mnId#
+	</select>
+	
+	<!-- 강좌정보 리스트 -->
+	<select id="infoCourse" resultClass="TL_COURSE">
+		SELECT 	COURSE_CD,
+				COURSE_NAME,
+				COURSE_START_DATE,
+				COURSE_END_DATE
+		FROM 	TL_COURSE
+	</select>
+		
+	
+	
+	
+	
+	
+	
+	
+</sqlMap>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig 
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map config 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+	
+<sqlMapConfig>
+	<properties resource="/dbconnect.properties"/>
+	<settings cacheModelsEnabled="true"
+			enhancementEnabled="true"
+			lazyLoadingEnabled="true"
+			useStatementNamespaces ="true" />
+
+	<transactionManager type="JDBC" commitRequired="false">
+	
+		<dataSource type="SIMPLE">
+			<property name="JDBC.Driver" value="${Driver}"/>
+			<property name="JDBC.ConnectionURL" value="${URL}"/>
+			<property name="JDBC.Username" value="${username}"/>
+			<property name="JDBC.Password" value="${password}"/>
+		</dataSource>
+	</transactionManager>		
+
+	<sqlMap resource="com/map/Performance.xml"/>
+
+</sqlMapConfig>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

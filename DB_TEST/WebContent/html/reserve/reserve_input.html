@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성동구주차관리시스템</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.bpopup.min.js"></script>
+<script src="../js/popup.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+<!-- start:header--------------------->
+<header id="header">
+	<div id="header_tit">
+    	<h3>방문주차 예약하기</h3>
+        <a href="../main/main.html" class="btn_home">메인</a>
+    </div>
+</header>
+<!-- end:header----------------------->
+<!-- start:content ------------------->
+<div id="content">
+	<div id="page">
+        <form id="reserve" name="reserve" method="post" onSubmit="#">
+        <fieldset>
+            <legend>방문주차 예약</legend>
+            <div class="sort">
+                <div class="input_list">
+                    <dl>
+                        <dt><label for="cellno" class="blue_tit">구분</label></dt>
+                        <dd style="width:70%;"><select name="" id=""  class="input_select" title="구분" style="width:95%;">
+                                <option value="">선택하세요</option>
+                                <option value="">시간 주차</option>
+                                <option value="">일일 주차</option>
+                                <option value="">월간 주차</option>
+                            </select></dd>
+                    </dl>
+                </div>
+            </div>
+            <hr>
+            <div class="sort pdt30">
+                <p class="blue_tit">이용일시</p>
+                <div class="input_list pdt30">
+                    <dl>
+                        <dt><label for="cellno">이용시작일시</label></dt>
+                        <dd style="width:70%;"><select name="" id=""  class="input_select" title="구분" style="width:45%;">
+                                <option value="">선택하세요</option>
+                                <option value="">2014-09-01</option>
+                                <option value="">2014-09-02</option>
+                                <option value="">2014-09-03</option>
+                            </select> 
+                            <input type="text" id="cellcer" name="cellcer" maxlength="2" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="시간" style="width:20%; ime-mode:disabled" autocomplete="off" class="input_login">
+                            <input type="text" id="cellcer" name="cellcer" maxlength="2" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="분" style="width:20%; ime-mode:disabled" autocomplete="off" class="input_login"></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="cellno">이용종료일시</label></dt>
+                        <dd style="width:70%;"><select name="" id=""  class="input_select" title="구분" style="width:45%;">
+                                <option value="">선택하세요</option>
+                                <option value="">2014-09-01</option>
+                                <option value="">2014-09-02</option>
+                                <option value="">2014-09-03</option>
+                            </select> 
+                            <input type="text" id="cellcer" name="cellcer" maxlength="2" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="시간" style="width:20%; ime-mode:disabled" autocomplete="off" class="input_login">
+                            <input type="text" id="cellcer" name="cellcer" maxlength="2" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="분" style="width:20%; ime-mode:disabled" autocomplete="off" class="input_login"></dd>
+                    </dl>
+                </div>
+            </div>
+            <hr>
+            <div class="sort pdt30">
+                <p class="blue_tit">주차구간</p>
+                <div class="input_list pdt30">
+                    <dl>
+                        <dt><label for="cellno">행정동</label></dt>
+                        <dd style="width:70%;"><select name="" id=""  class="input_select" title="구분" style="width:95%;">
+                                <option value="">선택하세요</option>
+                            </select></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="cellno">배정위치</label></dt>
+                        <dd style="width:70%;"><select name="" id=""  class="input_select" title="구분" style="width:95%;">
+                                <option value="">선택하세요</option>
+                            </select></dd>
+                    </dl>
+                </div>
+            </div>
+            <hr>
+            <div class="sort pdt30">
+                <p class="blue_tit">차량정보</p>
+                <div class="input_list pdt30">
+                    <dl>
+                        <dt><label for="cellno">차량정보</label></dt>
+                        <dd style="width:70%;"><input name="" type="text" class="input_read" id="" style="width:95%; ime-mode:disabled" onClick="inputChg(this);" onKeyDown="inputChg(this);" value="nyrich 1234" maxlength="20" readonly autocomplete="off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="cellno">연락처</label></dt>
+                        <dd style="width:70%;"><input name="" type="text" class="input_read" id="" style="width:95%; ime-mode:disabled" onClick="inputChg(this);" onKeyDown="inputChg(this);" value="01012345555" maxlength="20" readonly  autocomplete="off"></dd>
+                    </dl>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="input_list">
+                    <dl>
+                        <dt><span class="blue_tit">이용금액</span></dt>
+                        <dd style="width:70%;"><span class="black_tit">100,000원</span></dd>
+                    </dl>
+                </div>
+            </div>
+        </fieldset>
+        </form>
+        <div class="btn_util pdt40">
+            <a href="reserve_list.html" class="btn_list1">초기화</a>
+            <a href="payment.html" class="btn_list2">결제하기</a>
+        </div>
+    </div>
+</div>
+<!-- end:content ------------------->
+<!-- start:footer ------------------->
+<div id="footer">
+    <!-- inc_footer 불러오기 --><!--include file="../inc/inc_footer.html" -->
+</div>
+<!-- end:footer --------------------------------------------->
+</div>
+</body>
+</html>

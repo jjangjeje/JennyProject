@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성동구주차관리시스템</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.bpopup.min.js"></script>
+<script src="../js/popup.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+<!-- start:header--------------------->
+<header id="header">
+	<div id="header_tit">
+    	<h3>휴대폰 인증</h3>
+        <a href="../main/main.html" class="btn_home">메인</a>
+    </div>
+</header>
+<!-- end:header----------------------->
+<!-- start:content ------------------->
+<div id="content">
+	<div id="stit">방문 주차 예약을 위해 소지하고<br>계신 핸드폰 확인 인증을 진행 합니다.</div>
+	<div id="page">
+        <form id="cellphone" name="cellphone" method="post" onSubmit="#">
+        <fieldset>
+            <legend>휴대폰 인증</legend>
+            <div class="input_list">
+            	<dl>
+                    <dt><label for="cellno">휴대폰 번호</label></dt>
+                    <dd style="width:70%;"><select name="" id=""  class="input_select" title="휴대폰 번호 첫자리" style="width:27%;">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                        </select> - 
+                        <input type="text" id="cellno" name="cellno" maxlength="4" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="" style="width:24%; ime-mode:disabled" autocomplete="off" class="input_login"> -
+                        <input type="text" id="cellno" name="cellno" maxlength="4" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="" style="width:24%; ime-mode:disabled" autocomplete="off" class="input_login"></dd>
+                </dl>
+            	<dl>
+                    <dt><label for="cellcer">인증번호</label></dt>
+                    <dd style="width:70%;"><input type="text" id="cellcer" name="cellcer" maxlength="6" onClick="inputChg(this);" onKeyDown="inputChg(this);" placeholder="인증번호 입력" style="width:50%; ime-mode:disabled" autocomplete="off" class="input_login"> <a href="#none" class="btn_small" style="width:40%;">인증번호 받기</a></dd>
+                </dl>
+            </div>
+        </fieldset>
+        </form>
+        <p class="btn_area pdt30">
+            <a href="#" class="btn_login">확인</a>
+        </p>
+        <div class="info pdt40">
+        	<div class="box_style3">
+            	<div class="txt_info">
+                	인증번호 발송 시간이 지연될 경우<br>고객센터(2204-7900)로 연락주세요.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:content ------------------->
+<!-- start:footer ------------------->
+<div id="footer">
+    <!-- inc_footer 불러오기 --><!--include file="../inc/inc_footer.html" -->
+</div>
+<!-- end:footer --------------------------------------------->
+</div>
+</body>
+</html>

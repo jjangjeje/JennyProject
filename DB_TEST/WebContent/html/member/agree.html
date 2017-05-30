@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성동구주차관리시스템</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.bpopup.min.js"></script>
+<script src="../js/popup.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+<!-- start:header--------------------->
+<header id="header">
+	<div id="header_tit">
+    	<h3>이용약관 동의</h3>
+        <a href="../main/main.html" class="btn_home">메인</a>
+    </div>
+</header>
+<!-- end:header----------------------->
+<!-- start:content ------------------->
+<div id="content">
+	<div id="stit">이용약관 내용에 동의하셔야 예약이 가능합니다.</div>
+	<div id="page">
+        <form id="agree" name="agree" method="post" onSubmit="#">
+        <fieldset>
+            <legend>개인정보수집</legend>
+            <div class="agree_top">
+            	<h4>개인정보수집</h4>
+                <span><label for="agree1"><input type="checkbox" id="agree1" name="agree1"> 동의함</label></span>
+            </div>
+            <div class="agree_con">
+                <div class="box_style2">
+                	<div class="agree_txt"><!-- 개인정보수집 불러오기 --><!--include file="../inc/txt_private.html" --></div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>서비스이용약관</legend>
+            <div class="agree_top pdt40">
+            	<h4>서비스이용약관</h4>
+                <span><label for="agree2"><input type="checkbox" id="agree2" name="agree2"> 동의함</label></span>
+            </div>
+            <div class="agree_con">
+                <div class="box_style2">
+                	<div class="agree_txt"><!-- 이용약관 불러오기 --><!--include file="../inc/txt_use.html" --></div>
+                </div>
+            </div>
+        </fieldset>
+        </form>
+        <div class="btn_util pdt40">
+            <a href="../main/login.html" class="btn_list1">취소</a>
+            <a href="join.html" class="btn_list2">확인</a>
+        </div>
+    </div>
+</div>
+<!-- end:content ------------------->
+<!-- start:footer ------------------->
+<div id="footer">
+    <!-- inc_footer 불러오기 --><!--include file="../inc/inc_footer.html" -->
+</div>
+<!-- end:footer --------------------------------------------->
+</div>
+</body>
+</html>
