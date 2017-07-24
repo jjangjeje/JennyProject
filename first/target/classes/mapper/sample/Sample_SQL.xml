@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="sample">
+     <select id="couponList" parameterType="Map" resultType="first.sample.dto.SampleDTO">
+     	SELECT 
+    		MR.*
+		FROM(
+		    SELECT
+		        ROWNUM AS RNUM,
+		        M.*
+		    FROM (
+		            SELECT 
+						L.MR_COUPON_NBR,
+						GET_COMMON_NAME@memlink('800609', 'CC01', C.MR_COUPON_CATE, 'K')AS MR_COUPON_CATE,
+						C.DISCOUNT_AMT,
+						C.DISCOUNT_TYPE,
+						C.MR_COUPON_DESC,
+						C.USE_ST_TIME,
+						C.USE_ED_TIME, 
+						C.USE_FLAG,
+						GET_COMMON_NAME@memlink('800609', 'CC02', C.MR_COUPON_PATTERN , 'K')AS MR_COUPON_PATTERN
+					FROM T_MRCOUPON C LEFT JOIN T_MRCOUPON_LIST L 
+						ON L.MR_COMPANY_CD = C.MR_COMPANY_CD 
+						AND L.MR_COUPON_CD = C.MR_COUPON_CD
+		        )M
+		)MR
+		WHERE RNUM BETWEEN 
+			#{START_PAGE}
+		AND 
+			#{END_PAGE}
+     </select>
+     
+     <select id="couponlistALL" parameterType="Map" resultType="first.sample.dto.SampleDTO">
+     	
+	    SELECT 
+			L.MR_COUPON_NBR,
+			GET_COMMON_NAME@memlink('800609', 'CC01', C.MR_COUPON_CATE, 'K')AS MR_COUPON_CATE,
+			C.DISCOUNT_AMT,
+			C.DISCOUNT_TYPE,
+			C.MR_COUPON_DESC,
+			C.USE_ST_TIME,
+			C.USE_ED_TIME, 
+			C.USE_FLAG,
+			GET_COMMON_NAME@memlink('800609', 'CC02', C.MR_COUPON_PATTERN , 'K')AS MR_COUPON_PATTERN
+		FROM T_MRCOUPON C LEFT JOIN T_MRCOUPON_LIST L 
+			ON L.MR_COMPANY_CD = C.MR_COMPANY_CD 
+			AND L.MR_COUPON_CD = C.MR_COUPON_CD
+		
+     </select>
+     
+     
+</mapper>
+
+

@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face { 
+  font-family: Bon;
+  src: url('/resources/common/fonts/noto-thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bon;
+  src: url('/resources/common/fonts/NotoSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Bon;
+  src: url('/resources/common/fonts/NotoSansKR-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*{font-family: 'Noto Sans KR', sans-serif; }
+
+
+/* base **/
+*{margin:0; padding:0}
+html, body{width:100%; height:100%;background:rgba(0,0,0,0.5);}
+html{font-size:14px; /*overflow-y:scroll;*/}
+body{font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', dotum, Arial, sans-serif; color:#333; line-height:1.5; *word-break:break-all; -ms-word-break:break-all}
+header, footer, section, aside, nav, article{display:block}
+img{vertical-align:top; border:none}
+ul, ol, li{list-style:none}
+a, a:visited{text-decoration:none; color:#222222;vertical-align:middle}
+a:hover, a:active{}
+table{border-collapse:collapse;font-family:dotum, Arial, sans-serif;}
+hr{display:none}
+address{font-style:normal;}
+p {line-height: 1.5;}
+input {box-sizing:border-box;}
+input, select {border:1px solid #c3c3c3;background:#fff;vertical-align:middle;font-family: inherit;border-radius:0;}
+input[type="radio"] {border:none;background: none;}
+input[type="text"] {height:28px;padding:0 5px;}
+button {background:none;border:none;cursor:pointer;box-sizing:border-box;outline:none;font-family: inherit;vertical-align:middle;}
+textarea {border:1px solid #c3c3c3;}
+label {vertical-align:middle;}
+select {height:28px;}
+
+/* set */
+.clear{clear:both}
+.clearfix:after{content:""; clear:both; display:block}
+.blind{display:block; overflow:hidden; position:absolute; left:0; top:-1000em}
+.align-c {text-align:center !important;}
+.align-l {text-align:left;}
+.align-r {text-align:right;}
+.fl{float:left}
+.fr{float:right}
+.ml_per1 {margin-left:1.5%;}
+::-webkit-input-placeholder {color:#888;}
+::-moz-placeholder::before {color:#888;}
+:-ms-input-placeholder::before {color:#888;}
+.mt10 {margin-top:10px !important;}
+.mt20 {margin-top:20px !important;}
+.mt30 {margin-top:30px !important;}
+.mt40 {margin-top:40px !important;}
+.mt50 {margin-top:50px !important;}
+
+.wid01 {width:70px !important;}
+.wid02 {width:200px !important;}
+
+.orange {color:#ff9834;}
+.red {color:#ef4f00;}
+.red2 {color:#e81634;}
+.brown {color:#8d0f02;}
+
+.mt50{margin-top:50px !important;}
+
+/* SkipNavi */
+.skip {overflow: hidden; position: absolute; top: 0; left: 0; z-index: 1000; width: 1px; height: 1px; margin: 0 -1px -1px 0; padding: 0; font-size: 0; line-height: 0;}
+/* //SkipNavi */
+
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width:1199px){
+
+input[type="text"] {height:24px;padding:0 4px;}
+select {height:24px;}
+
+.mt10 {margin-top:9px !important;}
+.mt20 {margin-top:17px !important;}
+.mt30 {margin-top:25px !important;}
+.mt40 {margin-top:34px !important;}
+.mt50 {margin-top:43px !important;}
+
+.wid01 {width:60px !important;}
+.wid02 {width:170px !important;}
+
+
+}
+
+
+
+/*mobile*/
+@media only screen and (max-width:767px){
+
+input[type="text"] {height:20px;padding:0 3px;}
+select {height:20px;}
+
+.mt10 {margin-top:7px !important;}
+.mt20 {margin-top:14px !important;}
+.mt30 {margin-top:20px !important;}
+.mt40 {margin-top:28px !important;}
+.mt50 {margin-top:35px !important;}
+
+.wid01 {width:49px !important;}
+.wid02 {width:140px !important;}
+
+}

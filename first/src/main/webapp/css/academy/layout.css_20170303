@@ -1,0 +1,457 @@
+/***layout***/
+
+
+/*input, button*/
+button.btn-popup-x {background:url("../academy/images/btn_x_m.png") center no-repeat;background-size:20px auto;}
+button.btn-popup-del {font-size:14px;border:1px solid #444;color:#444;border-radius:5px;padding:0 20px;height:30px;}
+a.btn-popup-del {display:inline-block;line-height:22px;font-size:12px;border:1px solid #444;color:#444;border-radius:3px;padding:0 10px;height:22px;}
+a.btn-popup-modi {display:inline-block;line-height:22px;font-size:12px;background:#3251ae;color:#fff;border-radius:3px;padding:0 10px;height:22px;}
+a.btn-popup-pay {display:inline-block;line-height:22px;font-size:12px;background:#3251ae;color:#fff;border-radius:3px;padding:0 10px;height:22px;}
+button.btn-popup-det {font-size:14px;color:#fff;border-radius:5px;padding:0 20px;height:30px;background:#444}
+button.btn-popup-add {font-size:14px;color:#fff;border-radius:5px;padding:0 30px 0 20px;height:30px;background:#444 url("../academy/images/ico_add.png") 90% center no-repeat;background-size:auto;}
+button.btn-popup-reg {font-size:20px;color:#fff;border-radius:5px;padding:0 65px 0 20px;height:48px;background:#3251ae url("../academy/images/ico_check.png") 85% center no-repeat;background-size:auto;margin:0 5px;}
+button.btn-popup-can {font-size:20px;color:#fff;border-radius:5px;padding:0 40px;height:48px;background:#999;margin:0 5px;}
+button.btn-popup-sav {font-size:16px;color:#fff;border-radius:5px;padding:0 30px;height:40px;background:#3251ae}
+button.btn-popup-ok {font-size:20px;color:#fff;border-radius:5px;padding:0 40px;height:48px;background:#3251ae;margin:0 5px;}
+button.btn-popup-clo {font-size:20px;color:#fff;border-radius:5px;padding:0 40px;height:48px;background:#999;margin:0 5px;}
+
+
+div.input-radio {display: inline-block;vertical-align:middle;margin-left:15px;}
+div.input-radio input[type="radio"] {margin-right:3px;}
+div.input-radio label {font-size:14px;color:#666}
+
+div.input-check {display: inline-block;vertical-align:middle;}
+div.input-check input[type="checkbox"] {margin-right:3px;width:18px;height:18px;}
+div.input-check label {display:inline-block;font-size:14px;color:#666;font-weight:800;}
+
+
+/*table common*/
+div.popup-top-area {position:relative;z-index:10;width:100%;height:44px;background:#3251ae; color:#fff;box-sizing:border-box;overflow: hidden;}
+div.popup-top-area h1.top-tit {font-size:24px;padding-left:70px;line-height: 44px;font-weight:normal;}
+div.popup-top-area h1.tit01 {background:url("../academy/images/ico_title01.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area h1.tit02 {background:url("../academy/images/ico_title02.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area h1.tit03 {background:url("../academy/images/ico_title03.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area h1.tit04 {background:url("../academy/images/ico_title04.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area h1.tit05 {background:url("../academy/images/ico_title05.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area h1.tit06 {background:url("../academy/images/ico_title06.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area h1.tit07 {background:url("../academy/images/ico_title07.png") 25px center no-repeat;background-size:auto;}
+div.popup-top-area div.water-logo {position:absolute;top:9px;right:60px;width:66px;height:24px;background:url("../academy/images/logo_acc02.png") center no-repeat;background-size:100% auto;}
+div.popup-top-area div.top-btn-wrap {position: absolute;right: 0;top: 0;border-left:1px solid #29428f;}
+div.popup-top-area div.top-btn-wrap button {width:46px;height:44px;float:left;border-left:1px solid #495ea0;}
+div.popup-contents-area {width:100%;padding:20px;box-sizing:border-box;background:#fff;}
+div.popup-contents-area h2.sub-tit01 {margin:10px 0 5px;font-size:18px;color:#333;background:url("../academy/images/ico_sub_tit01.png") left center no-repeat;background-size:auto;padding-left:20px;}
+div.popup-bottom-btn {text-align:center;}
+div.popup-bottom-btn button {}
+
+div.ctrl-btn-wrap {text-align:right;position: absolute;right: 0;top: -3px;}
+
+div.pagination {text-align:center;}
+/*div.pagination > a {display:inline-block;vertical-align:middle;width:20px;height:19px;color:#3c3c3c;font-size:14px;}
+div.pagination a.on {text-decoration:underline;color:#3251ae;}
+div.pagination a.prev {background:url("../academy/images/page02.png") center no-repeat;background-size:100% 100%;}
+div.pagination a.next {background:url("../academy/images/page03.png") center no-repeat;background-size:100% 100%;}*/
+div.pagination button.btn-more {height:48px;font-size:16px;color:#fff;background:#3251ae;border-radius:5px;padding: 0 30px;}
+
+div.popup-tab-area {}
+div.popup-tab-area > ul {overflow:hidden;background: url("../academy/images/bg_tab01.png") center 1px repeat-x;background-size:auto;}
+div.popup-tab-area > ul > li {box-sizing: border-box;border:1px solid #ccc;border-bottom:none;border-right:none;width:147px;height:40px;float:left;background:#ebebeb;line-height:38px;text-align:center;}
+div.popup-tab-area > ul > li:first-child {margin-left:0;}
+div.popup-tab-area > ul > li:last-child {border-right:1px solid #ccc;}
+div.popup-tab-area > ul > li.on {background:#fff;border:1px solid #3251ae;border-bottom:none;}
+div.popup-tab-area > ul > li > span {font-size:15px;background: url("../academy/images/dot02.png") left center no-repeat;background-size:auto;padding-left:10px;}
+
+
+table.coltype01 {width:100%;}
+table.coltype01 > tbody > tr > th, table.coltype01 > tbody > tr > td {border-bottom:1px solid #ccc;height:40px;}
+table.coltype01 > tbody > tr:first-child > th, table.coltype01 > tbody > tr:first-child > td {border-top:2px solid #666;background:#eee}
+table.coltype01 > tbody > tr:first-child > th {background:#eee url("../academy/images/dot01.png") 20px center no-repeat;background-size:auto;}
+table.coltype01 > tbody > tr:nth-of-type(odd) > th, table.coltype01 > tbody > tr:nth-of-type(odd) > td {}
+table.coltype01 > tbody > tr > th {font-size:15px;color:#333;text-align:left;padding-left:30px;font-weight:normal;background:url("../academy/images/dot01.png") 20px center no-repeat;background-size:auto;}
+table.coltype01 > tbody > tr > td {font-size:15px;color:#444;}
+table.coltype02 {width:100%;}
+table.coltype02 > tbody > tr > th, table.coltype02 > tbody > tr > td {border-bottom:1px solid #ccc;}
+table.coltype02 > tbody > tr:first-child > th, table.coltype02 > tbody > tr:first-child > td {border-top:1px solid #666;}
+table.coltype02 > tbody > tr > th {font-size:14px;color:#333;background:#eee}
+table.coltype02 > tbody > tr > td {font-size:14px;color:#666;border-left:1px solid #ccc;padding: 9px 0 9px 5px;}
+table.coltype02 > tbody > tr > td span.it {display: inline-block;vertical-align:middle;}
+table.coltype02 > tbody > tr > td.price {text-align:right;}
+
+table.coltype03 {width:100%;}
+table.coltype03 > tbody > tr > th, table.coltype03 > tbody > tr > td {border-bottom:1px solid #ccc;height:40px;}
+table.coltype03 > tbody > tr:first-child > th, table.coltype03 > tbody > tr:first-child > td {border-top:2px solid #666;}
+table.coltype03 > tbody > tr > th {font-size:15px;color:#333;background:#eee;font-weight:normal;}
+/*table.coltype03 > tbody > tr > th input[type="radio"] {margin-right:10px;}*/
+table.coltype03 > tbody > tr > td {font-size:15px;color:#666;padding-left:30px;}
+table.coltype03 > tbody > tr > td span.ph-num {}
+table.coltype03 > tbody > tr > td span.bir-date {margin-left:20px;}
+
+
+table.rowtype01 {width:100%;}
+table.rowtype01 > thead > tr > th, table.rowtype01 > tbody > tr > td {border-bottom:1px solid #ccc;height:34px;border-left:1px solid #ccc;}
+table.rowtype01 > thead > tr > th:first-child, table.rowtype01 > tbody > tr > td:first-child {border-left:none;}
+table.rowtype01 > thead > tr > th {border-top:1px solid #666;background:#eee;font-size:14px;color:#333;font-weight:normal;}
+table.rowtype01 > tbody > tr > td {padding:0 15px;box-sizing:border-box;font-size:14px;color:#666;}
+table.rowtype01 > tbody > tr > td input[type="radio"] {margin-right:3px;}
+table.rowtype01 > tbody > tr > td.price {text-align:right;}
+table.rowtype01 > tbody > tr > td.subject {text-align:center}
+
+div.calendar {width:288px;border:1px solid #ccc;box-sizing: border-box;background:#f8f7f6;padding:0 18px;}
+div.calendar div.month {position:relative;text-align:center;height:50px;}
+div.calendar div.month span {line-height:50px;color:#272727;font-weight:600;font-size:18px;}
+div.calendar div.month button {width:7px;height:13px;position:absolute;top:21px;left:50%;}
+div.calendar div.month button.btn-last {margin-left:-77px;background:url("../academy/images/btn_last.png") center no-repeat;background-size:100% 100%;}
+div.calendar div.month button.btn-next {margin-left:70px;background:url("../academy/images/btn_next.png") center no-repeat;background-size:100% 100%;}
+
+div.calendar-wrap {height: 230px;border-top:1px solid #cfcecb;position:relative;}
+table.calendar-type {width:100%;margin:7px auto 0}
+table.calendar-type tr th {font-size:15px;color:#343434;height: 25px;}
+table.calendar-type tr td {text-align:center;font-size:14px;color:#414141;height: 27px;}
+/*
+table.calendar-type tr th:first-child, table.calendar-type tr td:first-child, table.calendar-type tr td.red {color:#c10b20;}
+table.calendar-type tr th:last-child, table.calendar-type tr td:last-child {color:#063f8d;}
+*/
+table.calendar-type tr td span {width:25px;height:25px;display: inline-block;line-height: 25px;border-radius:50%;}
+table.calendar-type tr td span.today {text-decoration:underline;color:#1c5b70;}
+table.calendar-type tr td span.pick {background:#3251ae;color:#fff;}
+table.calendar-type tr td span.available {background:#c6c6c6;}
+div.color-info {width:100%;text-align:center;}
+div.color-info > span {margin: 0 10px;font-size:12px;color:#343434;}
+div.color-info > span > i {display: inline-block;width: 10px;height: 10px;vertical-align:middle;margin-right:5px;border-radius:50%;}
+div.color-info > span > span {display: inline-block;vertical-align:middle;}
+span.seatcolor.color10 i {background:#c6c6c6;}
+span.seatcolor.color11 i {background:#3251ae;}
+
+
+
+/*popup*/
+
+/*registration popup01*/
+div.registration {width:1000px;}
+div.regi-class-box01 {position:relative;}
+div.regi-class-box02 {}
+div.regi-class-box03 {position:relative;}
+div.registration div.inner {display:inline-block;vertical-align:top;}
+div.inner.calendarbox {width:33%;}
+div.inner.infotable {width:66%;}
+div.registration div.scroll-wrap {height:106px;overflow-y:scroll;}
+
+
+/*registration2 popup04*/
+div.registration2 {width:1000px;}
+div.regi-class2-box01 {position:relative;}
+div.regi-class2-box02 {}
+div.regi-class2-box03 {position:relative;}
+div.registration2 div.scroll-wrap {height:106px;overflow-y:scroll;}
+
+
+/*regi-student popup02*/
+div.regi-student {width:530px;}
+div.student-info-box01 {}
+
+/*regi-student-detail popup05*/
+div.regi-student-detail {width:530px;}
+
+
+
+/*regi-history popup03*/
+div.regi-history {width:1000px;}
+div.history-info-box01 {position:relative;}
+
+
+/*regi-history2 popup06*/
+div.regi-history2 {width:1000px;}
+div.history-info2-box01 {position:relative;}
+
+/*terms-agree popup07*/
+div.terms {width:1000px;}
+div.terms-text-box01 {}
+div.terms-text-box01 div.terms-agree {display:inline-block;width:47%;}
+div.terms-text-box01 > div.terms-agree:nth-of-type(even) {margin-left:5%;}
+div.terms-text-box01 div.terms-agree div.scroll-wrap {height:200px;overflow-y:scroll;border:1px solid #ccc;font-size:12px;color:#333;padding:10px;}
+div.terms-text-box01 div.agree-all-box {text-align:center;border:1px solid #ccc;padding:10px 0;background: #f5f5f5;}
+div.terms-text-box01 div.agree-all-box div.input-check {}
+
+/*pay-process popup08*/
+div.pay-process {width:530px;}
+div.pay-info-box {}
+div.pay-total-box {}
+
+/*only pc*/
+@media only screen and (min-width: 1280px) {
+
+
+}
+
+
+
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width:1199px){
+
+/***layout***/
+
+
+/*input, button*/
+button.btn-popup-x {background:url("../academy/images/btn_x_m.png") center no-repeat;background-size:17px auto;}
+button.btn-popup-del {font-size:12px;border-radius:4px;padding:0 17px;height:26px;}
+a.btn-popup-del {line-height:19px;font-size:11px;border-radius:3px;padding:0 2px;height:19px;box-sizing:border-box;}
+a.btn-popup-modi {line-height:19px;font-size:11px;border-radius:3px;padding:0 4px;height:19px;}
+a.btn-popup-pay {line-height:19px;font-size:11px;border-radius:3px;padding:0 4px;height:19px;}
+button.btn-popup-det {font-size:12px;border-radius:4px;padding:0 17px;height:26px;}
+button.btn-popup-add {font-size:12px;border-radius:4px;padding:0 26px 0 17px;height:26px;background:#444 url("../academy/images/ico_add.png") 90% center no-repeat;background-size:8px auto;}
+button.btn-popup-reg {font-size:17px;border-radius:4px;padding:0 55px 0 17px;height:41px;background:#3251ae url("../academy/images/ico_check.png") 85% center no-repeat;background-size:12px auto;margin:0 4px;}
+button.btn-popup-can {font-size:17px;border-radius:4px;padding:0 34px;height:41px;margin:0 4px;}
+button.btn-popup-sav {font-size:14px;border-radius:4px;padding:0 26px;height:34px;}
+button.btn-popup-ok {font-size:17px;border-radius:4px;padding:0 34px;height:41px;margin:0 4px;}
+button.btn-popup-clo {font-size:17px;border-radius:4px;padding:0 34px;height:41px;margin:0 4px;}
+
+div.input-radio {margin-left:13px;}
+div.input-radio input[type="radio"] {margin-right:3px;}
+div.input-radio label {font-size:12px;}
+
+div.input-check {}
+div.input-check input[type="checkbox"] {margin-right:3px;width:16px;height:16px;}
+div.input-check label {font-size:12px;}
+
+
+/*table common*/
+div.popup-top-area {height:37px;}
+div.popup-top-area h1.top-tit {font-size:20px;padding-left:60px;line-height: 37px;}
+div.popup-top-area h1.tit01 {background:url("../academy/images/ico_title01.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area h1.tit02 {background:url("../academy/images/ico_title02.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area h1.tit03 {background:url("../academy/images/ico_title03.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area h1.tit04 {background:url("../academy/images/ico_title04.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area h1.tit05 {background:url("../academy/images/ico_title05.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area h1.tit06 {background:url("../academy/images/ico_title06.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area h1.tit07 {background:url("../academy/images/ico_title07.png") 21px center no-repeat;background-size:28px auto;}
+div.popup-top-area div.water-logo {top:8px;right:50px;width:56px;height:20px;}
+div.popup-top-area div.top-btn-wrap button {width:39px;height:37px;}
+div.popup-contents-area {padding:17px;}
+div.popup-contents-area h2.sub-tit01 {margin:9px 0 4px;font-size:15px;background:url("../academy/images/ico_sub_tit01.png") left center no-repeat;background-size:9px auto;padding-left:17px;}
+
+div.ctrl-btn-wrap {top: -3px;}
+
+/*div.pagination > a {width:17px;height:16px;font-size:12px;}*/
+div.pagination button.btn-more {height:40px;font-size:14px;border-radius:4px;padding: 0 25px;}
+
+div.popup-tab-area > ul {overflow:hidden;background: url("../academy/images/bg_tab01.png") center -5px repeat-x;background-size:auto;}
+div.popup-tab-area > ul > li {width:125px;height:34px;line-height:32px;}
+div.popup-tab-area > ul > li > span {font-size:13px;background: url("../academy/images/dot02.png") left center no-repeat;background-size:auto;padding-left:8px;}
+
+
+table.coltype01 > tbody > tr > th, table.coltype01 > tbody > tr > td {height:34px;}
+table.coltype01 > tbody > tr:first-child > th {background:#eee url("../academy/images/dot01.png") 17px center no-repeat;background-size:auto;}
+table.coltype01 > tbody > tr > th {font-size:13px;padding-left:26px;background:url("../academy/images/dot01.png") 17px center no-repeat;background-size:auto;}
+table.coltype01 > tbody > tr > td {font-size:13px;}
+table.coltype02 > tbody > tr > th {font-size:12px;}
+table.coltype02 > tbody > tr > td {font-size:12px;padding: 8px 0 8px 4px;}
+
+table.coltype03 > tbody > tr > th, table.coltype03 > tbody > tr > td {height:34px;}
+table.coltype03 > tbody > tr > th {font-size:13px;}
+/*table.coltype03 > tbody > tr > th input[type="radio"] {margin-right:8px;}*/
+table.coltype03 > tbody > tr > td {font-size:13px;padding-left:26px;}
+table.coltype03 > tbody > tr > td span.bir-date {margin-left:17px;}
+
+
+table.rowtype01 > thead > tr > th, table.rowtype01 > tbody > tr > td {height:29px;}
+table.rowtype01 > thead > tr > th {font-size:12px;}
+table.rowtype01 > tbody > tr > td {padding:0 13px;font-size:12px;}
+table.rowtype01 > tbody > tr > td input[type="radio"] {margin-right:3px;}
+
+div.calendar {width:90%;padding:0 15px;}
+div.calendar div.month {height:40px;}
+div.calendar div.month span {line-height:40px;font-size:15px;}
+div.calendar div.month button {width:6px;height:11px;top:17px;}
+div.calendar div.month button.btn-last {margin-left:-65px;}
+div.calendar div.month button.btn-next {margin-left:60px;}
+
+div.calendar-wrap {height: 195px;}
+table.calendar-type {margin:6px auto 0}
+table.calendar-type tr th {font-size:13px;height: 21px;}
+table.calendar-type tr td {font-size:12px;height: 23px;}
+table.calendar-type tr td span {width:21px;height:21px;line-height: 21px;}
+div.color-info > span {margin: 0 2px;font-size:10px;}
+div.color-info > span > i {width: 8px;height: 8px;margin-right:2px;}
+
+/*popup*/
+
+
+/*registration popup01*/
+div.registration {width:100%;}
+div.registration div.scroll-wrap {height:90px;}
+
+
+/*registration2 popup04*/
+div.registration2 {width:100%}
+div.registration2 div.scroll-wrap {height:90px;}
+
+
+/*regi-student popup02*/
+div.regi-student {width:450px;}
+div.student-info-box01 {}
+
+/*regi-student-detail popup05*/
+div.regi-student-detail {width:450px;}
+
+
+
+/*regi-history popup03*/
+div.regi-history {width:100%;}
+
+
+/*regi-history2 popup06*/
+div.regi-history2 {width:100%;}
+
+
+/*terms-agree popup07*/
+div.terms {width:100%;}
+div.terms-text-box01 div.terms-agree div.scroll-wrap {height:170px;font-size:10px;padding:8px;}
+div.terms-text-box01 div.agree-all-box {padding:8px 0;}
+
+
+/*pay-process popup08*/
+div.pay-process {width:450px;}
+
+
+}
+
+
+
+/*mobile*/
+@media only screen and (max-width:767px){
+
+/***layout***/
+.m-none {display:none;}
+
+/*input, button*/
+button.btn-popup-x {background:url("../academy/images/btn_x_m.png") center no-repeat;background-size:14px auto;}
+button.btn-popup-del {font-size:10px;border-radius:3px;padding:0 14px;height:21px;}
+a.btn-popup-del {line-height:19px;font-size:10px;border-radius:3px;padding:0 3px;height:19px;box-sizing:border-box;}
+a.btn-popup-modi {line-height:19px;font-size:10px;border-radius:3px;padding:0 5px;height:19px;}
+a.btn-popup-pay {line-height:19px;font-size:10px;border-radius:3px;padding:0 5px;height:19px;}
+button.btn-popup-det {font-size:10px;border-radius:3px;padding:0 14px;height:21px;}
+button.btn-popup-add {font-size:10px;border-radius:3px;padding:0 21px 0 14px;height:21px;background:#444 url("../academy/images/ico_add.png") 90% center no-repeat;background-size:7px auto;}
+button.btn-popup-reg {font-size:14px;border-radius:3px;padding:0 46px 0 14px;height:34px;background:#3251ae url("../academy/images/ico_check.png") 85% center no-repeat;background-size:10px auto;margin:0 3px;}
+button.btn-popup-can {font-size:14px;border-radius:3px;padding:0 28px;height:34px;margin:0 3px;}
+button.btn-popup-sav {font-size:12px;border-radius:3px;padding:0 21px;height:28px;}
+button.btn-popup-ok {font-size:14px;border-radius:3px;padding:0 28px;height:34px;margin:0 3px;}
+button.btn-popup-clo {font-size:14px;border-radius:3px;padding:0 28px;height:34px;margin:0 3px;}
+
+div.input-radio {margin-left:11px;}
+div.input-radio input[type="radio"] {margin-right:2px;}
+div.input-radio label {font-size:10px;}
+
+div.input-check input[type="checkbox"] {margin-right:2px;width:14px;height:14px;}
+div.input-check label {font-size:10px;}
+
+
+/*table common*/
+div.popup-top-area {height:31px;}
+div.popup-top-area h1.top-tit {font-size:17px;padding-left:49px;line-height: 31px;}
+div.popup-top-area h1.tit01 {background:url("../academy/images/ico_title01.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area h1.tit02 {background:url("../academy/images/ico_title02.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area h1.tit03 {background:url("../academy/images/ico_title03.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area h1.tit04 {background:url("../academy/images/ico_title04.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area h1.tit05 {background:url("../academy/images/ico_title05.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area h1.tit06 {background:url("../academy/images/ico_title06.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area h1.tit07 {background:url("../academy/images/ico_title07.png") 18px center no-repeat;background-size:23px auto;}
+div.popup-top-area div.water-logo {top:7px;right:42px;width:46px;height:17px;}
+div.popup-top-area div.top-btn-wrap button {width:32px;height:31px;}
+div.popup-contents-area {padding:14px;}
+div.popup-contents-area h2.sub-tit01 {margin:7px 0 4px;font-size:13px;background:url("../academy/images/ico_sub_tit01.png") left center no-repeat;background-size:7px auto;padding-left:14px;}
+
+div.ctrl-btn-wrap {position:static;padding-bottom:2px;}
+
+/*div.pagination > a {width:14px;height:13px;font-size:11px;}*/
+div.pagination button.btn-more {height:34px;font-size:12px;border-radius:3px;padding: 0;width:100%;}
+
+div.popup-tab-area > ul {overflow:hidden;background:none;}
+div.popup-tab-area > ul > li {width: 33.3%;height:28px;line-height:26px;}
+div.popup-tab-area > ul > li > span {font-size:11px;background: url("../academy/images/dot02.png") left center no-repeat;background-size:2px auto;padding-left:7px;}
+
+
+table.coltype01 > tbody > tr > th, table.coltype01 > tbody > tr > td {height:28px;}
+table.coltype01 > tbody > tr:first-child > th {background:#eee;}
+table.coltype01 > tbody > tr > th {font-size:11px;padding-left:0;background:none;}
+table.coltype01 > tbody > tr > td {font-size:11px;}
+table.coltype01 > tbody > tr > td > a.btn-popup-pay {}
+table.coltype01 > tbody > tr > td > a.btn-popup-del {}
+table.coltype02 > tbody > tr > th {font-size:10px;}
+table.coltype02 > tbody > tr > td {font-size:10px;padding: 7px 0 7px 3px;}
+
+table.coltype03 > tbody > tr > th, table.coltype03 > tbody > tr > td {height:28px;}
+table.coltype03 > tbody > tr > th {font-size:11px;}
+/*)table.coltype03 > tbody > tr > th input[type="radio"] {margin-right:6px;}*/
+table.coltype03 > tbody > tr > td {font-size:11px;padding-left:21px;}
+table.coltype03 > tbody > tr > td.butt {padding-left:0;}
+table.coltype03 > tbody > tr > td span.bir-date {margin-left:14px;}
+table.coltype03 > tbody > tr > td > a.btn-popup-del {display:none;}
+table.coltype03 > tbody > tr > td > a.btn-popup-modi {display:none;}
+
+table.rowtype01 > thead > tr > th, table.rowtype01 > tbody > tr > td {height:24px;}
+table.rowtype01 > thead > tr > th {font-size:10px;}
+table.rowtype01 > tbody > tr > td {padding:0;font-size:10px;}
+table.rowtype01 > tbody > tr > td input[type="radio"] {margin-right:2px;}
+
+div.calendar {width:100%;padding:0 13px;}
+div.calendar div.month {height:35px;}
+div.calendar div.month span {line-height:35px;font-size:13px;}
+div.calendar div.month button {width:6px;height:11px;top:13px;}
+div.calendar div.month button.btn-last {margin-left:-65px;}
+div.calendar div.month button.btn-next {margin-left:60px;}
+
+div.calendar-wrap {height: 195px;}
+table.calendar-type {margin:5px auto 0}
+table.calendar-type tr th {font-size:13px;height: 21px;}
+table.calendar-type tr td {font-size:12px;height: 23px;}
+table.calendar-type tr td span {width:21px;height:21px;line-height: 21px;}
+div.color-info > span {margin: 0 8px;font-size:10px;}
+div.color-info > span > i {width: 8px;height: 8px;margin-right:4px;}
+
+
+
+
+/*popup*/
+
+
+/*registration popup01*/
+div.registration {width:100%;}
+div.regi-class-box03 {}
+div.inner.calendarbox {width:100%;}
+div.inner.infotable {width:100%;margin-top:30px;}
+div.registration div.scroll-wrap {height:auto}
+
+
+/*registration2 popup04*/
+div.registration2 {width:100%}
+div.registration2 div.scroll-wrap {height:auto}
+
+
+/*regi-student popup02*/
+div.regi-student {width:100%;}
+div.student-info-box01 {}
+
+/*regi-student-detail popup05*/
+div.regi-student-detail {width:100%;}
+
+
+
+/*regi-history popup03*/
+div.regi-history {width:100%;}
+
+
+/*regi-history2 popup06*/
+div.regi-history2 {width:100%;}
+
+
+/*terms-agree popup07*/
+div.terms {width:100%;}
+div.terms-text-box01 div.terms-agree {display:block;width: 100%;margin-top:15px;}
+div.terms-text-box01 > div.terms-agree:nth-of-type(even) {margin-left:0;}
+div.terms-text-box01 div.terms-agree div.scroll-wrap {height:170px;font-size:10px;padding:8px;}
+div.terms-text-box01 div.agree-all-box {padding:7px 0;}
+
+/*pay-process popup08*/
+div.pay-process {width:100%;}
+
+}

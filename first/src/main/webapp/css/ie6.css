@@ -1,0 +1,17 @@
+/* IE6 전용  */
+/*.gnb ul li {
+	height: 1%;
+}
+.visual {
+	height:1%;
+}
+#content {
+	height:auto !important;
+}*/
+input {
+	margin-top:-1px;
+	margin-bottom:-1px;
+}
+
+	#gnb li ul li .png { background:url(../images/common/gnb_submenu.png) no-repeat; 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/common/gnb_submenu.png',sizingMethod='crop'); }
